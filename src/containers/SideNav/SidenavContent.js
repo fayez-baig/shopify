@@ -124,6 +124,13 @@ class SidenavContent extends Component {
                     <IntlMessages id="pages.homePage" />
                   </span>
                 </NavLink>
+                <li>
+                <NavLink className="prepend-icon" to="/app/shop-page">
+                  <span className="nav-text">
+                    <IntlMessages id="pages.shopPage" />
+                  </span>
+                </NavLink>
+              </li>
               </li>
               <li>
                 <NavLink className="prepend-icon" to="/app/dashboard/test1">

@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import Header from "components/Header/index";
 import Sidebar from "containers/SideNav/index";
 import Footer from "components/Footer";
+
 import {
   ABOVE_THE_HEADER,
   BELOW_THE_HEADER,
@@ -63,6 +64,10 @@ class App extends React.Component {
                 <Route
                   path={`${match.url}/home-page`}
                   component={asyncComponent(() => import("./routes/HomePage"))}
+                />
+                  <Route
+                  path={`${match.url}/shop-page`}
+                  component={asyncComponent(() => import("./routes/ShopPage/Shop"))}
                 />
                 <Route
                   component={asyncComponent(() =>

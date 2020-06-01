@@ -10,7 +10,7 @@ const Error404 = () => (
         <IntlMessages id="extraPages.404Msg" />
       </h2>
       <p className="text-center zoomIn animation-delay-20 animated">
-        <Link className="btn btn-primary" to="/app/home-page">
+        <Link className="btn btn-primary" to="/app/">
           <IntlMessages id="extraPages.goHome" />
         </Link>
       </p>
