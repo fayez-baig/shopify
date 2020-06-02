@@ -6,14 +6,14 @@ import ProductGridItem from "../../../ui/product-grid/ProductGrid";
 
 const CollectionPreview = ({ title, items }) => (
   <div className="collectionPreview">
-    <h1 className="title" s>
-      {title.toUpperCase()}
-    </h1>
-    <div className="preview d-flex justify-content-around">
+    <h1 className="title">{title.toUpperCase()}</h1>
+    <div className="row d-flex justify-content-around">
       {items
         .filter((item, idx) => idx < 4)
         .map(({ id, ...otherprops }) => (
-          <ProductGridItem key={id} {...otherprops} />
+          <div className="col-lg-3 col-md-3 col-sm-6 col-12 m-0">
+            <ProductGridItem key={id} {...otherprops} />
+          </div>
         ))}
     </div>
   </div>

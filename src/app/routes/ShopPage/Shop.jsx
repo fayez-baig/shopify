@@ -13,10 +13,8 @@ class ShopPage extends React.Component {
     const { collections } = this.state;
     const heading = "shop";
     return (
-      <div className="shop-page">
-        <h1 className="heading" style={{ margin: "30px" }}>
-          {heading.toUpperCase()}
-        </h1>
+      <div className="app-wrapper">
+        <h1 className="heading">{heading.toUpperCase()}</h1>
         {collections.map((collection) => (
           <CollectionPreview key={collection.id} {...collection} />
         ))}
